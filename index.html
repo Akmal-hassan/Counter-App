@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            Counter App
+        </nav>
+    </header>
+
+   <div class="main">
+     <div class="head">
+            <div class="zero">
+                <h1>0</h1>
+            </div>
+            <hr>
+        <div >
+            <div class="btn">
+                <button class="but" onclick="add()">+</button>
+                <button class="but" onclick="remove()">-</button>
+                <button class="but1" onclick="Reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- <footer>
+        <p>Copyright &copy; 2024 Counter App. All rights reserved.</p>
+    </footer> -->
+</body>
+<script>
+    let count = 0
+   let add = () => {
+    count++
+    document.querySelector("h1").textContent = count
+   }
+   let remove = () => {
+     count--
+     document.querySelector("h1").textContent = count
+   }
+   let Reset = () => {
+    count=0
+    document.querySelector("h1").textContent = count
+   }
+
+</script>
+</html>
